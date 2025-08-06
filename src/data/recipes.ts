@@ -1,0 +1,390 @@
+import { Recipe } from '../types/Recipe'
+
+export const recipes: Recipe[] = [
+  {
+    id: 1,
+    title: "Garlic Herb Grilled Chicken with Asparagus",
+    description: "Juicy grilled chicken breast seasoned with fresh herbs, served with crispy asparagus spears",
+    prepTime: 5,
+    cookTime: 10,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Easy',
+    protein: 'Chicken',
+    cookingMethod: 'Grilling',
+    image: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&h=300&fit=crop',
+    ingredients: [
+      '2 chicken breasts (6 oz each)',
+      '1 lb fresh asparagus, trimmed',
+      '3 cloves garlic, minced',
+      '2 tbsp olive oil',
+      '1 tsp dried oregano',
+      '1 tsp dried thyme',
+      'Salt and pepper to taste',
+      '1 lemon, sliced'
+    ],
+    instructions: [
+      'Preheat grill to medium-high heat',
+      'Mix olive oil, garlic, oregano, thyme, salt, and pepper',
+      'Rub chicken breasts with herb mixture',
+      'Toss asparagus with remaining oil and seasonings',
+      'Grill chicken for 6-7 minutes per side until internal temp reaches 165°F',
+      'Grill asparagus for 3-4 minutes, turning once',
+      'Let chicken rest for 2 minutes, then slice',
+      'Serve with lemon slices'
+    ],
+    nutritionFacts: {
+      calories: 320,
+      protein: 45,
+      carbs: 8,
+      fat: 12,
+      fiber: 4
+    },
+    tags: ['High Protein', 'Low Carb', 'Gluten Free', 'Keto Friendly']
+  },
+  {
+    id: 2,
+    title: "Pan-Seared Salmon with Broccoli",
+    description: "Perfectly seared salmon fillet with garlic butter broccoli, ready in minutes",
+    prepTime: 3,
+    cookTime: 12,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Easy',
+    protein: 'Fish',
+    cookingMethod: 'Pan-Searing',
+    image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&h=300&fit=crop',
+    ingredients: [
+      '2 salmon fillets (6 oz each)',
+      '4 cups broccoli florets',
+      '3 tbsp butter',
+      '3 cloves garlic, minced',
+      '2 tbsp olive oil',
+      '1 lemon, juiced',
+      'Salt and pepper to taste',
+      'Fresh dill for garnish'
+    ],
+    instructions: [
+      'Season salmon fillets with salt and pepper',
+      'Heat olive oil in large skillet over medium-high heat',
+      'Cook salmon skin-side up for 4-5 minutes until golden',
+      'Flip and cook 3-4 minutes more',
+      'Remove salmon and keep warm',
+      'Add broccoli to same pan with 2 tbsp water',
+      'Cover and steam for 3 minutes',
+      'Add butter, garlic, and lemon juice to broccoli',
+      'Serve salmon over broccoli, garnish with dill'
+    ],
+    nutritionFacts: {
+      calories: 380,
+      protein: 42,
+      carbs: 10,
+      fat: 20,
+      fiber: 4
+    },
+    tags: ['Omega-3 Rich', 'Low Carb', 'Heart Healthy', 'Anti-Inflammatory']
+  },
+  {
+    id: 3,
+    title: "Beef Stir-Fry with Bell Peppers",
+    description: "Quick and colorful beef stir-fry with crisp bell peppers in a savory sauce",
+    prepTime: 8,
+    cookTime: 7,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Medium',
+    protein: 'Beef',
+    cookingMethod: 'Stir-Frying',
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&h=300&fit=crop',
+    ingredients: [
+      '12 oz beef sirloin, sliced thin',
+      '2 bell peppers (red and yellow), sliced',
+      '1 onion, sliced',
+      '3 cloves garlic, minced',
+      '1 tbsp ginger, minced',
+      '3 tbsp coconut oil',
+      '2 tbsp coconut aminos',
+      '1 tbsp apple cider vinegar',
+      'Salt and pepper to taste',
+      'Green onions for garnish'
+    ],
+    instructions: [
+      'Heat 2 tbsp coconut oil in wok or large skillet over high heat',
+      'Season beef with salt and pepper',
+      'Stir-fry beef for 2-3 minutes until browned',
+      'Remove beef and set aside',
+      'Add remaining oil, stir-fry peppers and onion for 3 minutes',
+      'Add garlic and ginger, cook 30 seconds',
+      'Return beef to pan',
+      'Add coconut aminos and vinegar, toss for 1 minute',
+      'Garnish with green onions and serve'
+    ],
+    nutritionFacts: {
+      calories: 340,
+      protein: 38,
+      carbs: 12,
+      fat: 16,
+      fiber: 3
+    },
+    tags: ['High Protein', 'Paleo', 'Whole30', 'Dairy Free']
+  },
+  {
+    id: 4,
+    title: "Lemon Herb Pork Tenderloin with Zucchini",
+    description: "Tender pork medallions with sautéed zucchini in a bright lemon herb sauce",
+    prepTime: 5,
+    cookTime: 10,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Easy',
+    protein: 'Pork',
+    cookingMethod: 'Pan-Searing',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=300&fit=crop',
+    ingredients: [
+      '1 lb pork tenderloin, sliced into medallions',
+      '2 medium zucchini, sliced',
+      '3 tbsp olive oil',
+      '2 lemons, juiced and zested',
+      '2 tbsp fresh rosemary, chopped',
+      '3 cloves garlic, minced',
+      'Salt and pepper to taste',
+      '2 tbsp fresh parsley'
+    ],
+    instructions: [
+      'Season pork medallions with salt, pepper, and rosemary',
+      'Heat 2 tbsp olive oil in large skillet over medium-high heat',
+      'Cook pork for 3-4 minutes per side until golden',
+      'Remove pork and keep warm',
+      'Add remaining oil and zucchini to pan',
+      'Sauté zucchini for 3-4 minutes until tender-crisp',
+      'Add garlic, cook 30 seconds',
+      'Add lemon juice and zest, return pork to pan',
+      'Garnish with parsley and serve'
+    ],
+    nutritionFacts: {
+      calories: 310,
+      protein: 40,
+      carbs: 8,
+      fat: 14,
+      fiber: 2
+    },
+    tags: ['Lean Protein', 'Low Carb', 'Mediterranean', 'Quick Cook']
+  },
+  {
+    id: 5,
+    title: "Cajun Shrimp with Green Beans",
+    description: "Spicy Cajun-seasoned shrimp with crisp-tender green beans, bursting with flavor",
+    prepTime: 5,
+    cookTime: 8,
+    totalTime: 13,
+    servings: 2,
+    difficulty: 'Easy',
+    protein: 'Seafood',
+    cookingMethod: 'Sautéing',
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop',
+    ingredients: [
+      '1 lb large shrimp, peeled and deveined',
+      '1 lb fresh green beans, trimmed',
+      '3 tbsp olive oil',
+      '2 tsp Cajun seasoning',
+      '3 cloves garlic, minced',
+      '1 bell pepper, sliced',
+      '1 onion, sliced',
+      'Salt to taste',
+      'Lemon wedges for serving'
+    ],
+    instructions: [
+      'Season shrimp with Cajun seasoning and salt',
+      'Heat 2 tbsp olive oil in large skillet over medium-high heat',
+      'Add green beans, cook for 4 minutes until crisp-tender',
+      'Add bell pepper and onion, cook 2 minutes',
+      'Push vegetables to one side of pan',
+      'Add remaining oil and shrimp to empty side',
+      'Cook shrimp 2 minutes per side until pink',
+      'Add garlic, toss everything together for 1 minute',
+      'Serve with lemon wedges'
+    ],
+    nutritionFacts: {
+      calories: 280,
+      protein: 35,
+      carbs: 15,
+      fat: 10,
+      fiber: 6
+    },
+    tags: ['Low Calorie', 'High Protein', 'Spicy', 'Gluten Free']
+  },
+  {
+    id: 6,
+    title: "Turkey Meatballs with Spinach",
+    description: "Juicy turkey meatballs served over sautéed spinach with garlic and herbs",
+    prepTime: 8,
+    cookTime: 7,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Medium',
+    protein: 'Turkey',
+    cookingMethod: 'Pan-Frying',
+    image: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&h=300&fit=crop',
+    ingredients: [
+      '1 lb ground turkey (93% lean)',
+      '6 cups fresh spinach',
+      '1 egg',
+      '2 tbsp almond flour',
+      '3 cloves garlic, minced',
+      '3 tbsp olive oil',
+      '1 tsp Italian seasoning',
+      '1/2 tsp red pepper flakes',
+      'Salt and pepper to taste',
+      'Fresh basil for garnish'
+    ],
+    instructions: [
+      'Mix ground turkey, egg, almond flour, half the garlic, Italian seasoning, salt, and pepper',
+      'Form into 12 small meatballs',
+      'Heat 2 tbsp olive oil in large skillet over medium heat',
+      'Cook meatballs for 6-7 minutes, turning to brown all sides',
+      'Remove meatballs and keep warm',
+      'Add remaining oil and garlic to pan',
+      'Add spinach and red pepper flakes, cook until wilted',
+      'Season spinach with salt and pepper',
+      'Serve meatballs over spinach, garnish with basil'
+    ],
+    nutritionFacts: {
+      calories: 290,
+      protein: 42,
+      carbs: 6,
+      fat: 11,
+      fiber: 3
+    },
+    tags: ['Lean Protein', 'Iron Rich', 'Low Carb', 'Meal Prep Friendly']
+  },
+  {
+    id: 7,
+    title: "Balsamic Glazed Chicken Thighs with Brussels Sprouts",
+    description: "Crispy chicken thighs with caramelized Brussels sprouts in a tangy balsamic glaze",
+    prepTime: 5,
+    cookTime: 10,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Easy',
+    protein: 'Chicken',
+    cookingMethod: 'Pan-Searing',
+    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=500&h=300&fit=crop',
+    ingredients: [
+      '4 boneless chicken thighs',
+      '1 lb Brussels sprouts, halved',
+      '3 tbsp balsamic vinegar',
+      '2 tbsp olive oil',
+      '1 tbsp honey',
+      '3 cloves garlic, minced',
+      '1 tsp dried thyme',
+      'Salt and pepper to taste',
+      '2 tbsp chopped walnuts'
+    ],
+    instructions: [
+      'Season chicken thighs with salt, pepper, and thyme',
+      'Heat olive oil in large skillet over medium-high heat',
+      'Cook chicken skin-side down for 5 minutes until crispy',
+      'Flip and cook 3 minutes more, remove and keep warm',
+      'Add Brussels sprouts to same pan, cut-side down',
+      'Cook for 4 minutes until caramelized',
+      'Add garlic, cook 30 seconds',
+      'Mix balsamic vinegar and honey, add to pan',
+      'Return chicken to pan, glaze everything for 1 minute',
+      'Garnish with walnuts and serve'
+    ],
+    nutritionFacts: {
+      calories: 420,
+      protein: 35,
+      carbs: 18,
+      fat: 24,
+      fiber: 7
+    },
+    tags: ['Crispy Skin', 'Antioxidant Rich', 'Comfort Food', 'Fall Flavors']
+  },
+  {
+    id: 8,
+    title: "Herb-Crusted Lamb Chops with Cauliflower",
+    description: "Perfectly seasoned lamb chops with roasted cauliflower florets and fresh herbs",
+    prepTime: 5,
+    cookTime: 10,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Medium',
+    protein: 'Lamb',
+    cookingMethod: 'Pan-Searing',
+    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&h=300&fit=crop',
+    ingredients: [
+      '8 lamb rib chops',
+      '1 head cauliflower, cut into florets',
+      '3 tbsp olive oil',
+      '2 tbsp fresh rosemary, chopped',
+      '2 tbsp fresh mint, chopped',
+      '3 cloves garlic, minced',
+      '1 tsp Dijon mustard',
+      'Salt and pepper to taste',
+      'Lemon wedges for serving'
+    ],
+    instructions: [
+      'Season lamb chops with salt and pepper',
+      'Mix rosemary, mint, garlic, and mustard to make herb paste',
+      'Rub herb paste on lamb chops',
+      'Heat 2 tbsp olive oil in large skillet over medium-high heat',
+      'Add cauliflower, cook for 5 minutes until golden',
+      'Season cauliflower and push to one side',
+      'Add remaining oil and lamb chops to pan',
+      'Cook lamb 3 minutes per side for medium-rare',
+      'Let rest 2 minutes, serve with lemon wedges'
+    ],
+    nutritionFacts: {
+      calories: 380,
+      protein: 32,
+      carbs: 10,
+      fat: 24,
+      fiber: 4
+    },
+    tags: ['Gourmet', 'High Protein', 'Low Carb', 'Special Occasion']
+  },
+  {
+    id: 9,
+    title: "Teriyaki Chicken with Snow Peas",
+    description: "Sweet and savory teriyaki chicken stir-fried with crisp snow peas and carrots",
+    prepTime: 7,
+    cookTime: 8,
+    totalTime: 15,
+    servings: 2,
+    difficulty: 'Easy',
+    protein: 'Chicken',
+    cookingMethod: 'Stir-Frying',
+    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&h=300&fit=crop',
+    ingredients: [
+      '1 lb chicken breast, sliced thin',
+      '8 oz snow peas, trimmed',
+      '2 carrots, julienned',
+      '3 tbsp coconut oil',
+      '3 tbsp coconut aminos',
+      '1 tbsp rice vinegar',
+      '1 tsp fresh ginger, grated',
+      '2 cloves garlic, minced',
+      '1 tsp sesame oil',
+      'Sesame seeds for garnish'
+    ],
+    instructions: [
+      'Mix coconut aminos, rice vinegar, ginger, and garlic for sauce',
+      'Heat 2 tbsp coconut oil in wok over high heat',
+      'Stir-fry chicken for 4-5 minutes until cooked through',
+      'Remove chicken and set aside',
+      'Add remaining oil, stir-fry snow peas and carrots for 2 minutes',
+      'Return chicken to wok',
+      'Add sauce and sesame oil, toss for 1 minute',
+      'Garnish with sesame seeds and serve'
+    ],
+    nutritionFacts: {
+      calories: 320,
+      protein: 40,
+      carbs: 12,
+      fat: 12,
+      fiber: 4
+    },
+    tags: ['Asian Inspired', 'Colorful', 'Quick Cook', 'Family Friendly']
+  }
+]
